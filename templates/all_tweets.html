@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Tweets</title>
+</head>
+<body>
+    <h1>All Tweets</h1>
+    <ul>
+        {% for key, tweet in tweets.items() %}
+            <li>
+                <h3>{{ tweet.title }}</h3>
+                <p>{{ tweet.text }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/add_tweet"><button>add tweet</button></a>
+</body>
+</html>
